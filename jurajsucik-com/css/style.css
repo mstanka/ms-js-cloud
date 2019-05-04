@@ -78,9 +78,7 @@ p{
   margin-bottom: 2rem;
 }
 
-.btn:hover{
-  background: var(--primary-dark-color);
-}
+
 
 .btn{
   display: inline-block;
@@ -155,6 +153,16 @@ p{
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.2); 
+  transition: transform 1s ease-in-out;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+  background: var(--primary-dark-color);
+}
+
+.showcase-content h1:hover{
+  transform: scale(1.1);
 }
 
 /*Section: About me*/
