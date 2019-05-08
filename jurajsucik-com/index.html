@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
 </head>
 <body id="home">
   <!--Navbar-->
@@ -18,8 +19,8 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#cloud">Cloud</a></li>
-      <li><a href="#hiking">Hiking</a></li>
-      <li><a href="#brain">Brain</a></li>
+      <li><a href="#badges">Badges</a></li>
+      <li><a href="#project">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -36,26 +37,26 @@
   <!--Section: About me-->
   <section id="about" class="bg-light py-2">
     <div class="container">
-      <h2 class="m-heading text-center"><span class="text-primary">About</span> me</h2>
+      <h2 class="m-heading text-center"><span class="text-primary">About</span> Me</h2>
       <div class="items">
         <div class="item">
           <i class="fas fa-cloud fa-2x"></i>
           <div>
-            <h3>Working in the cloud</h3>
+            <h3>Working In The Cloud</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, et!</p>
           </div>
         </div>
         <div class="item">
           <i class="fas fa-mountain fa-2x"></i>
           <div>
-            <h3>Hiking in the mountains</h3>
+            <h3>Hiking In The Mountains</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, eius!</p>
           </div>
         </div>
         <div class="item">
           <i class="fas fa-brain fa-2x"></i>
           <div>
-            <h3>And there's more</h3>
+            <h3>Hacking My Longevity</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, nobis?</p>
           </div>
         </div>
@@ -64,37 +65,58 @@
   </section>
 
   <!--Section: Cloud-->
-  <section id="cloud">
-      <div class="cloud-img"></div>
-      <div class="cloud-text bg-dark p-3">
-        <h2 class="m-heading text-center">Working in the cloud</span></h2>
+  <section id="cloud" class="bg-dark py-2">
+    <div class="container">
+      <div class="cloud-text ">
+        <h2 class="m-heading text-center">The <span class="text-primary">Cloud</span></h2>
         <p>Lorem ipsum dolor sit amet. </p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi aliquam nisi et earum rem temporibus, doloribus magni facere ea necessitatibus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus nihil impedit libero rerum nisi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laboriosam, aperiam sapiente eligendi ducimus illo facere sed molestiae architecto, enim saepe quis necessitatibus similique quo doloribus eveniet id nam voluptatem, 
+          tempore vitae beatae tempora dignissimos quod in. Eveniet, rem tempora. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt delectus nam laudantium repellendus debitis, quos excepturi mollitia atque fuga nesciunt, 
+          odit doloremque quibusdam earum neque. Facere dignissimos repellat ea.</p>
       </div>
-      <div class="cloud-img"></div>
-    </section>
+    </div>
+  </section>
 
-    <!--Section: My badges-->
-    <section id="badges" class="py-1">
-        <div class="container">
-            <h2 class="m-heading text-center">
-                <span class="text-primary">My</span> badges
-            </h2>
-            <div class="items">
-                <div><img src="./img/badges/logo1.png" alt="Badge"></div>
-                <div><img src="./img/badges/logo2.png" alt="Badge"></div>
-                <div><img src="./img/badges/logo3.png" alt="Badge"></div>
-                <div><img src="./img/badges/logo4.png" alt="Badge"></div>
-                <div><img src="./img/badges/logo5.png" alt="Badge"></div>
-            </div>
-        </div>
-    </section>
+  <!--Section: My badges-->
+  <section id="badges" class="bg-light py-2">
+    <div class="container">
+      <h2 class="m-heading text-center">My<span class="text-primary"> Badges</span>
+      </h2>
+      <div class="items">
+        <div><a href="https://www.youracclaim.com/badges/ce110b1d-3a0c-44dc-8862-888083dff9c5" target="_blank">
+          <img src="./img/badges/azure-solutions-architect-expert.png" alt="azure solutions architect expert"></a></div>
+        <div><a href="https://www.youracclaim.com/badges/c8a0a17c-e4b2-49d7-9e50-09a487b38d53" target="_blank">
+          <img src="./img/badges/MCSA-Linux-on-Azure-2018.png" alt="MCSA Linux on Azure 2018"></a></div>
+        <div><a href="https://www.youracclaim.com/badges/b7c1eff5-4335-4d89-919c-8633c00958c5" target="_blank">
+          <img src="./img/badges/linux-certified.png" alt="linux certified"></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section: project grid section-->
+  <section id="project" class="bg-light py-2">
+    <div class="container">
+      <h2 class="m-heading text-center">My
+          <span class="text-primary"> Projects</span>
+      </h2>
+      <div class="project-content">
+        <div class="item text-center">project1</div>
+        <div class="item text-center">project2</div>
+        <div class="item text-center">project3</div>
+        <div class="item text-center">project4</div>
+        <div class="item text-center">project5</div>
+        <div class="item text-center">project6</div>
+      </div>
+    </div>
+  </section>
+
 
   <!--Footer-->
-  <footer id="main-footer" class="bg-dark text-center py-0">
+  <footer id="main-footer" class="bg-dark py-0">
     <div class="container">
-      <div class="text-small">
+      <div class="text-small text-center">
         <p>Copyright &copy; 2019, <a href="http://www.jurajsucik.com">www.jurajsucik.com</a>, All rights reserved</p>
         <p>Designed by <a href="http://www.marketastankova.com">marketastankova.com</a></p>
       </div>
