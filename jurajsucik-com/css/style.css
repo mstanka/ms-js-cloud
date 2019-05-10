@@ -4,6 +4,7 @@
   --primary-color: #2dabdb;
   --primary-dark-color: #2899c5;
   --secondary-color: #09222b;
+ /* --secondary-color: #db5d2d;*/
   --light-color: #f4f4f4;
 }
 
@@ -219,6 +220,17 @@ p{
 }*/
 
 /*Section: Footer*/
-#main-footer .container{
+#contact .container{
   padding: 0 2rem;
 }
+#contact .contact-info{
+  display: flex;
+  margin: auto;
+  max-width: 240px;
+  padding: 2rem 0;
+}
+#contact .contact-info .item{
+  flex: 1;
+  text-align: center;
+ }
+
