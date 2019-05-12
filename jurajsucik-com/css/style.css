@@ -212,7 +212,6 @@ p{
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 1rem;
- 
   color: var(--light-color);
   padding-top: 2rem;
 }
@@ -227,8 +226,8 @@ p{
   grid-column: 1 / span 2;
 }
 #project .project-content .item3{
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 3;
+  grid-column: 1 / span 3;
+ 
 }
 #project .project-content a{
   color: #fff;

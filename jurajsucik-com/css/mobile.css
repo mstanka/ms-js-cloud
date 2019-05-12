@@ -24,10 +24,9 @@
   padding: 1rem;
 }
 
-#project .project-content{
-  grid-template-columns: repeat(2, auto);
+#project .project-content {
+  grid-template-columns: repeat(1, auto);
 }
-
 
 /* Smartphones */
 @media(max-width: 500px) {
@@ -51,10 +50,6 @@
 
   #showcase .showcase-content {
     top: 110px;
-  }
-  
-  #project .project-content{
-    grid-template-columns: repeat(1, auto);
   }
 }
 
