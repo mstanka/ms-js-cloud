@@ -26,7 +26,12 @@
 
 #project .project-content {
   grid-template-columns: repeat(1, auto);
-}
+ }
+ #project .project-content .item1,
+ #project .project-content .item2,
+ #project .project-content .item3{
+  grid-column: 1 / span 1;
+ }
 
 /* Smartphones */
 @media(max-width: 500px) {
@@ -36,11 +41,11 @@
   }
 
   #navbar .logo {
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;*/
     text-align: center;
   }
   #navbar ul {
-    padding: 0.5rem;
+    padding: 0.3rem;
   }
 
   #navbar ul li a{
