@@ -24,6 +24,15 @@
   padding: 1rem;
 }
 
+#cloud .profi-cloud {
+  grid-template-columns: repeat(1, auto);
+ }
+ #cloud .profi-cloud .item1,
+ #cloud .profi-cloud .item2,
+ #cloud .profi-cloud .item3{
+  grid-column: 1 / span 1;
+ }
+
 #project .project-content {
   grid-template-columns: repeat(1, auto);
  }

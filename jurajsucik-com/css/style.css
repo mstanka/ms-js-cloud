@@ -51,7 +51,7 @@ p{
 }
 
 .bg-light{
-  background: var(light-color);
+  background: var(--light-color);
   color: var(--secondary-color);
 }
 
@@ -188,12 +188,37 @@ p{
   border-radius: 50%;
   margin-bottom: 1rem;
 }
-/*Section: The Cloud*/
-#cloud p{
-  padding-top: 1rem;
-  margin: 0 2rem;
+/*Section: Profi Cloud*/
+#cloud .profi-cloud{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1rem;
+  color: var(--light-color);
 }
 
+#cloud .profi-cloud > div{
+  padding: 2rem;
+  border: var(--primary-color) 1px solid;
+  background: var(--secondary-color);
+}
+
+#cloud .profi-cloud .item1,
+#cloud .profi-cloud .item2{
+  grid-column: 1 / span 2;
+}
+
+#cloud .profi-cloud a{
+  color: #fff;
+  font-style: italic;
+}
+#cloud p{
+  padding-top: 2rem;
+  margin: 0 2rem;
+}
+#cloud li{
+  list-style-position: inside;
+  padding-top: 0.5rem;
+}
 /*Section: Badges*/
 #badges .items{
   display: flex;
@@ -204,10 +229,8 @@ p{
   width: 50%;
   padding-top: 2rem;
 }
+
 /*Section: projects*/
-#project{
-  background: var(--light-color);
-}
 #project .project-content{
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -220,14 +243,8 @@ p{
   border: var(--primary-color) 1px solid;
   background: var(--secondary-color);
 }
-#project .project-content .item1{
-  color: #fff;
-  background: var(--primary-color);
-  grid-column: 1 / span 2;
-}
 #project .project-content .item3{
   grid-column: 1 / span 3;
- 
 }
 #project .project-content a{
   color: #fff;
