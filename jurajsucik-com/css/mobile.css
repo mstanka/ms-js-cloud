@@ -32,6 +32,10 @@
  #cloud .profi-cloud .item3{
   grid-column: 1 / span 1;
  }
+
+ #cloud .profi-cloud > div{
+   padding: 1rem;
+ }
  
 #project .project-content {
   grid-template-columns: repeat(1, auto);
