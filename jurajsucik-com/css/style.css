@@ -183,9 +183,9 @@ p{
 }
 
 #about .items .item i{
-  background: var(--primary-color);
-  padding: 1.6rem;
-  border-radius: 50%;
+  /*background: var(--primary-color);
+   padding: 1.6rem;
+  border-radius: 50%; */
   margin-bottom: 1rem;
 }
 /*Section: Profi Cloud*/
@@ -222,7 +222,7 @@ p{
 #cloud div > p{
   padding-top: 1rem;
 }
-#cloud .item1 li{
+#cloud .item1 li{ 
   display: inline;
   list-style-position: inside;
   line-height: 1.7rem;
@@ -230,9 +230,11 @@ p{
   border: var(--primary-color) 1px solid;
   border-radius: 10%;
 }
-#cloud .item2 li{
+#cloud .list li{
+  display: block;
   list-style-position: inside;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
+  border: var(--light-color) 1px solid;
 }
 /*Section: Badges*/
 #badges .items{
