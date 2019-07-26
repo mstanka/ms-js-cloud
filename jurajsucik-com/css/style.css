@@ -44,7 +44,7 @@ p{
   color: var(--primary-color);
 }
 .text-secondary{
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -213,7 +213,7 @@ p{
 }
 
 #cloud .profi-cloud a{
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   font-style: italic;
 }
 #cloud p{
