@@ -6,13 +6,10 @@
   display: block;
   padding: 1rem;
 }
-/* Align icon to left */
 #about .items .item {
   display: flex;
   text-align: left;
 }
-
-/* Position icon */
 #about .items .item i {
   margin-right: 1.3rem;
   align-self: center;
@@ -46,7 +43,6 @@
   grid-column: 1 / span 1;
  }
 
-/* Smartphones */
 @media(max-width: 500px) {
   #navbar {
     flex-direction: column;
@@ -54,7 +50,6 @@
   }
 
   #navbar .logo {
-    /*margin-bottom: 0.5rem;*/
     text-align: center;
   }
   #navbar ul {
