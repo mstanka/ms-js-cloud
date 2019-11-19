@@ -44,16 +44,9 @@
  }
 
 @media(max-width: 500px) {
-  #navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #navbar .logo {
-    text-align: center;
-  }
   #navbar ul {
     padding: 0.3rem;
+    font-size: 1.2rem;
   }
 
   #navbar ul li a{
