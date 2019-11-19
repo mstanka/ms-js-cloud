@@ -79,7 +79,8 @@ p{
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.1; 
-  letter-spacing: 3;
+  letter-spacing: .3em;
+  text-transform: uppercase;
 }
 
 .m-heading{
@@ -89,7 +90,7 @@ p{
 }
 
 .lead{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -120,6 +121,7 @@ p{
   display: flex;  
   list-style: none;
   font-size: 1.5rem;;
+  text-transform: uppercase;
 }
 
 #navbar ul li a{
@@ -145,9 +147,8 @@ p{
 #showcase .showcase-content{
   display: flex;
   flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  align-items: left;
+  text-align: center;
+  justify-content: center;  
   height: 100%;
   padding: 0 15vw;
   /*Overlay*/
@@ -155,7 +156,7 @@ p{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.6); 
 }
 
 /*------------------------Section: About me------------------------*/
@@ -167,14 +168,21 @@ p{
   flex: 1;
   text-align: center;
   padding: 1rem;
+
 }
 #about .items .item a{
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-style: italic;
 }
 
 #about .items .item i{
   margin-bottom: 1rem;
+  color: var(--primary-dark-color);
 }
+#about .items .item i:hover{
+  color: var(--primary-color);
+}
+
 /*----------------------Section: Profi Cloud-----------------------*/
 #cloud .profi-cloud{
   display: grid;
@@ -221,17 +229,21 @@ p{
   padding-top: 1rem;
 }
 #cloud .item1 li{ 
-  display: inline;
+  display: inline-block;
   list-style-position: inside;
-  line-height: 1.7rem;
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-weight: bold;
   font-size: 1.2rem;
+  border: 1px dotted;
+  border-radius: 10%;
 }
+
+#cloud .item1 li:hover{ 
+  background: var(--primary-dark-color);
+}
+
 #cloud .list li{
-  display: block;
-  list-style-position: inside;
-  line-height: 1.5rem;
+  display: inline-block;
   font-size: 1rem;
   border: none;
  }
@@ -289,7 +301,6 @@ p{
  }
 
  #contact .contact-info i:hover {
-   padding: .3rem;
    border-radius: 5px;
    background: var(--primary-dark-color);
    transition: .4s ease-in;
