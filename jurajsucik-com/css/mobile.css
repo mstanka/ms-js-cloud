@@ -1,5 +1,9 @@
-#showcase{
-  height: 60vh;
+#showcase {
+  height: 90vh;
+  background: #333 url('../img/showcase-mobile.jpg') no-repeat center center/cover;
+}
+#showcase .showcase-content {
+  background: rgba(0, 0, 0, 0.7); 
 }
 
 #about .items {
@@ -31,7 +35,7 @@
  }
 
  #cloud .profi-cloud > div{
-   padding: 1rem;
+   padding: 2rem 0;
  }
  
 #project .project-content {
@@ -41,6 +45,12 @@
  #project .project-content .item2,
  #project .project-content .item3{
   grid-column: 1 / span 1;
+ }
+
+ #contact {
+   height: 100vh;
+   display: flex;
+   align-content: center;
  }
 
 @media(max-width: 500px) {
