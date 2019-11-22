@@ -3,7 +3,7 @@
 :root {
   --primary-color: #0078d4;
   --primary-dark-color: #074892;
-  --secondary-color: #4e4e4c;
+  --secondary-color: #243a5e;
   --light-color: #f4f4f4;
 }
 
@@ -87,6 +87,7 @@ p{
   font-size: 2rem;
   margin-bottom: 1rem;
   line-height: 1.1;
+  letter-spacing: .1em;
 }
 
 .lead{
@@ -220,7 +221,7 @@ p{
 
 #cloud .profi-cloud a{
   font-style: italic;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 #cloud p{
   padding-top: 2rem;
