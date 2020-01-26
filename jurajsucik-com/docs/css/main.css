@@ -125,6 +125,14 @@ header {
   max-width: 450px;
 }
 
+.section__intro .intro__text .intro__text-bold {
+  font-weight: 700;
+}
+
+.section__intro .intro__text p {
+  line-height: 1.3rem;
+}
+
 @media screen and (min-width: 1024px) {
   .section__intro {
     -webkit-box-orient: horizontal;
@@ -148,8 +156,18 @@ header {
 }
 
 .section__badges-container .section__badges .badges__text {
-  padding: 2rem 4rem;
+  padding: 2rem;
   color: #fffffe;
+}
+
+@media screen and (min-width: 768px) {
+  .section__badges-container .section__badges .badges__text {
+    padding: 2rem 4rem;
+  }
+}
+
+.section__badges-container .section__badges .badges__text p {
+  line-height: 1.5rem;
 }
 
 .section__badges-container .section__badges .badges__items {
