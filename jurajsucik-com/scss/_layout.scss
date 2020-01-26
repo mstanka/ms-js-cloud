@@ -1,0 +1,135 @@
+header {
+  background: $dark-color; 
+}
+
+.header__container {   
+  height: 6rem;
+  max-width: 1024px;
+  margin: 0 auto;    
+  padding: 2rem 0; 
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    
+    .link {
+      color: $ligth-color;
+      padding: 1rem;
+      margin: 0 .7rem;
+      border-radius: 5px;
+
+      @include media-lg {
+        font-size: 1.8rem;        
+      }
+
+      &:hover {
+        background-color: $secondary-color;        
+      }
+    }
+  }  
+}
+
+.section__intro {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .intro__ilustration {
+    margin: 1.5rem 0; 
+  }
+  .intro__text {
+    padding: 2rem 1rem;  
+    max-width: 450px; 
+  }
+
+  @include media-lg {
+    flex-direction: row-reverse;
+    padding: 3rem;
+  }
+}
+
+.section__badges-container {
+  background-color: $secondary-color;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .section__badges {
+    padding: 5rem 3rem;
+    margin: 3rem 0;
+    text-align: center;
+
+    .badges__text {
+      padding: 2rem 4rem;
+      color: $ligth-color;
+    }
+
+    .badges__items {
+      display: grid;
+      grid-template-columns: 1fr;
+      
+      @include media-md {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;      
+      }
+        
+      @include media-lg {
+        grid-template-columns: repeat(4, 1fr);
+      } 
+
+      img {      
+        max-width: 200px; 
+        padding: 1rem;  
+        margin: .5rem;
+        transition: .4s ease-in;
+        box-shadow: 1px 1px 3px;
+        
+        &:hover {
+          transform: scale(1.01);
+        }
+      }    
+    }
+  }
+}
+
+.section__contact {
+  margin: 8rem auto;
+  max-width: 700px;
+  padding: 2rem 1rem;
+ 
+  h3 {    
+    text-align: center;
+  }
+  .contact__info {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    .contact-item {
+      padding: 0 .8rem;
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $dark-color;
+  color: $ligth-color;
+  text-align: center;
+  font-size: 11px;
+  padding: 3rem 0;
+  line-height: 1.4rem; 
+
+  a {
+    color: $ligth-color;
+  }
+}
+    

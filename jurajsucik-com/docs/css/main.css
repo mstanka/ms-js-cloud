@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #2f2e41;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+  color: #ef4565;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.9rem;
+  color: #2f2e41;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2f2e41;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: #5f6c7b;
+  background-color: #fffffe;
+}
+
+img {
+  max-width: 340px;
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 500px;
+  }
+}
+
+header {
+  background: #2f2e41;
+}
+
+.header__container {
+  height: 6rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.header__container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.header__container ul .link {
+  color: #fffffe;
+  padding: 1rem;
+  margin: 0 .7rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__container ul .link {
+    font-size: 1.8rem;
+  }
+}
+
+.header__container ul .link:hover {
+  background-color: #ef4565;
+}
+
+.section__intro {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.section__intro .intro__ilustration {
+  margin: 1.5rem 0;
+}
+
+.section__intro .intro__text {
+  padding: 2rem 1rem;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 3rem;
+  }
+}
+
+.section__badges-container {
+  background-color: #ef4565;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section__badges-container .section__badges {
+  padding: 5rem 3rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.section__badges-container .section__badges .badges__text {
+  padding: 2rem 4rem;
+  color: #fffffe;
+}
+
+.section__badges-container .section__badges .badges__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .section__badges-container .section__badges .badges__items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__badges-container .section__badges .badges__items {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.section__badges-container .section__badges .badges__items img {
+  max-width: 200px;
+  padding: 1rem;
+  margin: .5rem;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
+  -webkit-box-shadow: 1px 1px 3px;
+          box-shadow: 1px 1px 3px;
+}
+
+.section__badges-container .section__badges .badges__items img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.section__contact {
+  margin: 8rem auto;
+  max-width: 700px;
+  padding: 2rem 1rem;
+}
+
+.section__contact h3 {
+  text-align: center;
+}
+
+.section__contact .contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.section__contact .contact__info .contact-item {
+  padding: 0 .8rem;
+}
+
+.section__contact .contact__info .contact-item a:hover {
+  color: #ef4565;
+}
+
+footer {
+  background-color: #2f2e41;
+  color: #fffffe;
+  text-align: center;
+  font-size: 11px;
+  padding: 3rem 0;
+  line-height: 1.4rem;
+}
+
+footer a {
+  color: #fffffe;
+}
+/*# sourceMappingURL=main.css.map */
