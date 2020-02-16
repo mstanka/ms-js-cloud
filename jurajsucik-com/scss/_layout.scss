@@ -1,5 +1,7 @@
 header {
-  background: $dark-color; 
+  background: $dark-color;
+  max-width: 1440px; 
+  margin: 0 auto;  
 }
 
 .header__container {   
@@ -7,6 +9,7 @@ header {
   max-width: 1024px;
   margin: 0 auto;    
   padding: 2rem 0; 
+  border-bottom: 3px solid $secondary-color;
 
   ul {
     display: flex;
@@ -21,7 +24,7 @@ header {
       border-radius: 5px;
 
       @include media-lg {
-        font-size: 1.8rem;        
+        font-size: 1.6rem;        
       }
 
       &:hover {
@@ -32,7 +35,9 @@ header {
 }
 
 .section__intro {
-  padding: 3rem 0;
+  padding: 8rem 0;
+  //height: 60vh;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,15 +48,33 @@ header {
     margin: 1.5rem 0; 
   }
   .intro__text {
-    padding: 2rem 1rem;  
+    padding: 2rem;  
     max-width: 450px;     
 
     .intro__text-bold {
       font-weight: 700;
     }
 
+    h1 {
+      font-size: 2.6rem;  
+      color: $dark-color;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      padding-top: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;  
+      color: $secondary-color;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding-top: .2rem;
+      text-transform: uppercase; 
+    }
+
     p {
-      line-height: 1.3rem;
+      line-height: 1.6rem;
+      padding-top: 2rem;
     }
   }
 
@@ -67,8 +90,7 @@ header {
   margin: 0 auto;
 
   .section__badges {
-    padding: 5rem 3rem;
-    margin: 3rem 0;
+    padding: 10rem 2rem;
     text-align: center;
 
     .badges__text {
@@ -76,11 +98,11 @@ header {
       color: $ligth-color;
 
       @include media-md {
-        padding: 2rem 4rem;
+        padding: 2rem 10rem 4rem 10rem;
       }
 
       p {
-        line-height: 1.5rem;
+        line-height: 1.6rem;
       }
     }
 
@@ -90,7 +112,7 @@ header {
       
       @include media-md {
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;      
+        gap: 2rem;      
       }
         
       @include media-lg {
@@ -99,7 +121,6 @@ header {
 
       img {      
         max-width: 200px; 
-        padding: 1rem;  
         margin: .5rem;
         transition: .4s ease-in;
         box-shadow: 1px 1px 3px;
@@ -113,9 +134,9 @@ header {
 }
 
 .section__contact {
-  margin: 8rem auto;
-  max-width: 700px;
-  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 10rem 2rem;
  
   h3 {    
     text-align: center;
@@ -137,7 +158,10 @@ header {
 }
 
 footer {
+  max-width: 1440px; 
+  margin: 0 auto;  
   background-color: $dark-color;
+  border-top: 3px solid $secondary-color;
   color: $ligth-color;
   text-align: center;
   font-size: 11px;

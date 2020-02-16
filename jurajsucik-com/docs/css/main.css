@@ -8,19 +8,7 @@
 
 body {
   font-family: 'Arimo', sans-serif;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #2f2e41;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 2.2rem;
-  padding-bottom: 1rem;
-  color: #ef4565;
-  font-weight: 700;
+  background: #90b4ce;
 }
 
 h3 {
@@ -41,14 +29,14 @@ li {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
   color: #5f6c7b;
   background-color: #fffffe;
 }
 
 img {
-  max-width: 340px;
+  max-width: 310px;
 }
 
 @media screen and (min-width: 768px) {
@@ -57,8 +45,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  img {
+    max-width: 550px;
+  }
+}
+
 header {
   background: #2f2e41;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header__container {
@@ -66,6 +62,7 @@ header {
   max-width: 1024px;
   margin: 0 auto;
   padding: 2rem 0;
+  border-bottom: 3px solid #f25f4c;
 }
 
 .header__container ul {
@@ -90,16 +87,17 @@ header {
 
 @media screen and (min-width: 1024px) {
   .header__container ul .link {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 .header__container ul .link:hover {
-  background-color: #ef4565;
+  background-color: #f25f4c;
 }
 
 .section__intro {
-  padding: 3rem 0;
+  padding: 8rem 0;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +119,7 @@ header {
 }
 
 .section__intro .intro__text {
-  padding: 2rem 1rem;
+  padding: 2rem;
   max-width: 450px;
 }
 
@@ -129,8 +127,26 @@ header {
   font-weight: 700;
 }
 
+.section__intro .intro__text h1 {
+  font-size: 2.6rem;
+  color: #2f2e41;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding-top: 2rem;
+}
+
+.section__intro .intro__text h2 {
+  font-size: 2rem;
+  color: #f25f4c;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding-top: .2rem;
+  text-transform: uppercase;
+}
+
 .section__intro .intro__text p {
-  line-height: 1.3rem;
+  line-height: 1.6rem;
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -144,14 +160,13 @@ header {
 }
 
 .section__badges-container {
-  background-color: #ef4565;
+  background-color: #f25f4c;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .section__badges-container .section__badges {
-  padding: 5rem 3rem;
-  margin: 3rem 0;
+  padding: 10rem 2rem;
   text-align: center;
 }
 
@@ -162,12 +177,12 @@ header {
 
 @media screen and (min-width: 768px) {
   .section__badges-container .section__badges .badges__text {
-    padding: 2rem 4rem;
+    padding: 2rem 10rem 4rem 10rem;
   }
 }
 
 .section__badges-container .section__badges .badges__text p {
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 .section__badges-container .section__badges .badges__items {
@@ -181,7 +196,7 @@ header {
   .section__badges-container .section__badges .badges__items {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -194,7 +209,6 @@ header {
 
 .section__badges-container .section__badges .badges__items img {
   max-width: 200px;
-  padding: 1rem;
   margin: .5rem;
   -webkit-transition: .4s ease-in;
   transition: .4s ease-in;
@@ -208,9 +222,9 @@ header {
 }
 
 .section__contact {
-  margin: 8rem auto;
-  max-width: 700px;
-  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 10rem 2rem;
 }
 
 .section__contact h3 {
@@ -235,11 +249,14 @@ header {
 }
 
 .section__contact .contact__info .contact-item a:hover {
-  color: #ef4565;
+  color: #f25f4c;
 }
 
 footer {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #2f2e41;
+  border-top: 3px solid #f25f4c;
   color: #fffffe;
   text-align: center;
   font-size: 11px;
