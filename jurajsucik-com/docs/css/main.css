@@ -55,6 +55,7 @@ header {
   background: #2f2e41;
   max-width: 1440px;
   margin: 0 auto;
+  border-bottom: 3px solid #f25f4c;
 }
 
 .header__container {
@@ -62,7 +63,6 @@ header {
   max-width: 1024px;
   margin: 0 auto;
   padding: 2rem 0;
-  border-bottom: 3px solid #f25f4c;
 }
 
 .header__container ul {
