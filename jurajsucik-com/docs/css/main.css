@@ -226,11 +226,12 @@ img {
 }
 
 .contact__container {
-  padding: 10rem 0 3rem 0;
+  padding: 5rem 0;
 }
 
 .contact__container .contact__container-contacts {
   margin: 0 auto;
+  padding: 3rem 0;
 }
 
 .contact__container .contact__container-contacts h3 {
