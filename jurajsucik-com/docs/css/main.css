@@ -14,6 +14,7 @@ body {
 h3 {
   font-size: 1.9rem;
   color: #2f2e41;
+  text-transform: uppercase;
 }
 
 a {
@@ -200,7 +201,6 @@ img {
   .badges .badges__container .badges__items {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    gap: 2rem;
   }
 }
 
@@ -212,7 +212,7 @@ img {
 }
 
 .badges .badges__container .badges__items img {
-  max-width: 200px;
+  max-width: 150px;
   margin: .5rem;
   -webkit-transition: .4s ease-in;
   transition: .4s ease-in;
@@ -247,15 +247,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .contact__container .contact__container-contacts .contact__info .contact__info-item {
   padding: 0 .8rem;
 }
 
-.contact__container .contact__container-contacts .contact__info .contact__info-item a:hover {
+.contact__container .contact__container-contacts .contact__info .contact__info-item a {
   color: #f25f4c;
+}
+
+.contact__container .contact__container-contacts .contact__info .contact__info-item a:hover {
+  color: #2f2e41;
 }
 
 .contact__container .contact__container-twitter {
