@@ -5,163 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Juraj Sucik | Personal </title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="docs/css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
 </head>
 <body>
-
-  <nav id="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#cloud">Cloud</a></li>
-      <li><a href="#badges">Badges</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header id="showcase">
-    <div class="showcase-content text-center">      
-      <h1 class="l-heading">Juraj <span class="text-primary">Sucik</span></h1>
-      <p class="lead">Cloud Architect</p>
+  <!--*****************Header******************-->
+  <header id="header" class="header">
+    <div class="container header__container">
+      <nav id="main__nav">        
+        <ul>         
+          <li><a class="link" href="#about">About</a></li>
+          <li><a class="link" href="#badges">Badges</a></li>
+          <li><a class="link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section id="about" class="bg-light py-5">
-    <div class="container">
-      <h2 class="m-heading text-center">Clouds, Mountains & Longevity</h2>
-      <div class="items">
-        <div class="item">
-          <i class="fas fa-cloud fa-4x"></i>
-          <div>
-            <h3>Working with Cloud</h3>
-            <p>I am enthusiastic about using <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank">Cloud technologies</a>. Today I bring organizations of all sizes to cloud platforms. </p>
-          </div>
+  <main class="main">      
+    <!--*****************About******************-->
+    <section id="about" class="about"> 
+      <div class="container about__container">
+        <div class="about__ilustration">
+          <img src="img/ilustration/undraw_going_up.svg" alt="">
         </div>
-        <div class="item">
-          <i class="fas fa-mountain fa-4x"></i>
-          <div>
-            <h3>Hiking in the Mountains</h3>
-            <p>I love hiking. I hike in the mountains of all sizes to be closer to the clouds :)</p>
-          </div>
+        <div class="about__text">
+          <h1>Juraj Sucik</h1>
+          <h2>Cloud Architect</h2>
+          <p>I am enthusiastic about using <span class="about__text-bold">Cloud technologies</span>. Today I bring organizations of all sizes to cloud platforms.</p>
         </div>
-        <div class="item">
-          <i class="fas fa-brain fa-4x"></i>
+        </div>
+    </section>
+
+    <!--*****************Badges******************-->
+    <section id="badges" class="badges">
+      <div class="container badges__container">
+        <h3>My Professional Badges</h3>
+        <div class="badges__text">
+          <p>I continuously learn new things and test myself on the noveltiest in the Cloud. Some of my professional bagdes are listed below, however you can find more of them on 
+            <a href="https://www.youracclaim.com/users/juraj-sucik/badges?sort=-state_updated_at" target="_blank">Acclaim.</a>
+          </p>
+        </div>
+        <div class="badges__items">
           <div>
-            <h3>Hacking my Longevity</h3>
-            <p>I want to live actively for a long time. I decided to pay close attention to my lifestyle.</p>
+            <a href="https://www.youracclaim.com/badges/ce110b1d-3a0c-44dc-8862-888083dff9c5" target="_blank">
+              <img src="./img/badges/azure-solutions-architect-expert.png" alt="azure solutions architect expert">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youracclaim.com/badges/155ec3fc-070f-406a-a636-14c9693f9988" target="_blank">
+              <img src="./img/badges/azure-devops-engineer-expert.png" alt="azure devops engineer expert">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youracclaim.com/badges/fb4e20f7-c751-4807-b530-0dfd67411858" target="_blank">
+              <img src="./img/badges/Core-Infrastructure.png" alt="core infrastructure">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youracclaim.com/badges/b7c1eff5-4335-4d89-919c-8633c00958c5" target="_blank">
+              <img src="./img/badges/linux-certified.png" alt="linux foundation certified sysadmin">
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="cloud" class="bg-primary-gradient py-5">
-    <div class="container">
-      <h2 class="m-heading text-center">Working with Cloud</h2>
-      <div class="profi-cloud">
-        <div class="item1 text-center">
-          <p>I gained advanced experience and knowledge across various aspects of IT operations,
-            including
-          <ul>
-            <li>networking</li>
-            <li>virtualization</li>
-            <li>identity</li>
-            <li>security</li>
-            <li>business continuity</li>
-            <li>disaster recovery</li>
-            <li>data management</li>
-            <li>budgeting</li>
-            <li>governance</li>
-          </ul>
-          <p>I use these skills and knowledge to advise stakeholders and translate business requirements into
-            secure, scalable, and reliable solutions.</p>
-          <p>Some of my latest work projects include:</p>
-            <div class="list">
-              <ul>
-                <li>Helping a luxury watch brand to deploy ERP system on Azure platform</li>
-                <li>Advising global healthcare company to help implement "Azure as a Service"</li>
-                <li>Consulting global financial service firm to bring their new product on Azure platform</li>
-              </ul>
+    <!--*****************Contact******************-->
+    <section id="contact" class="contact">
+      <div class="container contact__container">
+        <div class="contact__container-twitter">
+          <a class="twitter-timeline" data-width="500" data-height="500" data-theme="light"
+            href="https://twitter.com/yuri_durie?ref_src=twsrc%5Etfw">Tweets by yuri_durie</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="contact__container-contacts">
+          <h3>Contact</h3>
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <a href="https://www.linkedin.com/in/sucik/" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+            <div class="contact__info-item">
+              <a href="https://twitter.com/yuri_durie/" target="_blank">
+                <i class="fab fa-twitter-square fa-2x"></i>
+              </a>
+            </div>
+            <div class="contact__info-item">
+              <a href="https://www.instagram.com/hiking_juraj_sucik/" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </div>
+            <div class="contact__info-item">
+              <a href="https://medium.com/@juraj.sucik" target="_blank">
+                <i class="fab fa-medium fa-2x"></i>
+              </a>
             </div>
           </div>
-        <div class="item3 bg-light text-center">
-          <div class="items3-heading">
-            <h3 class="m-heading">Moving to Cloud </h3>
-          </div>         
-          <img src="img/moving-to-cloud.jpeg" alt="Mountain scenery with clouds">
-          <h4 class="py-0">my personal perspective after consulting with 100+ companies</h4>
-          <p>Cloud is everywhere today. People use it even if they don’t realize it.
-            There are over 2 billion active users on Facebook, over 1 billion active users on Instagram,
-            300 million users on Amazon. And so on.</p>
-          <p>On the other hand, a lot of companies I work with are cautious of cloud computing.
-            They even think they don’t need it. I advise to all sorts of companies — local, global,
-            multinational, national, private, public. Slowly some of them start to consider using cloud
-            platforms for their minor workloads.</p>
-          <p>....</p>
-          <p><a href="https://medium.com/@juraj.sucik/moving-to-cloud-my-personal-perspective-after-consulting-with-100-companies-e48673a6fa42" target="_blank">Read more on Medium.</a></p>
-        </div>
-        <div class="item3 bg-light text-center">
-          <div class="items3-heading">
-            <h3 class="m-heading">Central IT in the role of Cloud broker</h3>
-          </div>          
-          <img src="img/central-it.jpeg" alt="Clouds on the sky">
-          <h4 class="py-0">contracts and cost management</h4>          
-          <p>In my last post, I wrote that central IT need to pivot its role to become cloud broker and cloud governor
-            in order to enable DevOps teams to get most of the benefits of the cloud platforms.</p>
-          <p>So what are some of the most important activities
-            the central IT needs to start doing on the way to become this so called cloud broker and governor? </p>
-          <p>....</p>
-          <p><a href="https://medium.com/@juraj.sucik/central-it-in-the-role-of-cloud-broker-contracts-and-cost-management-9337deb8ae87" target="_blank">Read more on Medium.</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+        </div>  
+      </div>      
+    </section>
+    
+  </main>
 
-  <section id="badges" class="bg-light py-5">
-    <div class="container">
-      <h2 class="m-heading text-center">My Professional Badges</h2>
-      <div class="badges-text">
-        <p>I continuously learn new things and test myself on the noveltiest in the Cloud. Some of my professional bagdes are listed below, 
-        however you can find more of them on <a href="https://www.youracclaim.com/users/juraj-sucik/badges?sort=-state_updated_at" target="_blank">Acclaim</a>.
-        </p>
-      </div>
-      <div class="items">
-        <div><a href="https://www.youracclaim.com/badges/ce110b1d-3a0c-44dc-8862-888083dff9c5" target="_blank">
-          <img src="./img/badges/azure-solutions-architect-expert.png" alt="azure solutions architect expert"></a></div>
-        <div><a href="https://www.youracclaim.com/badges/155ec3fc-070f-406a-a636-14c9693f9988" target="_blank">
-          <img src="./img/badges/azure-devops-engineer-expert.png" alt="azure devops engineer expert"></a></div>
-        <div><a href="https://www.youracclaim.com/badges/fb4e20f7-c751-4807-b530-0dfd67411858" target="_blank">
-          <img src="./img/badges/Core-Infrastructure.png" alt="core infrastructure"></a></div>
-        <div><a href="https://www.youracclaim.com/badges/b7c1eff5-4335-4d89-919c-8633c00958c5" target="_blank">
-          <img src="./img/badges/linux-certified.png" alt="linux foundation certified sysadmin"></a></div>
-      </div>
-    </div>
-  </section>
-
- <section id="contact" class="bg-primary-gradient py-5">
-   <div class="container text-center">
-    <h2 class="m-heading py-2">Contact</h2>
-      <div class="contact-info">
-        <div class="item">
-          <a href="https://www.linkedin.com/in/sucik/" target="_blank">
-            <i class="fab fa-linkedin fa-2x"></i></a></div>
-        <div class="item">
-          <a href="https://twitter.com/yuri_durie/" target="_blank">
-            <i class="fab fa-twitter-square fa-2x"></i></a></div>
-        <div class="item">
-          <a href="https://www.instagram.com/hiking_juraj_sucik/" target="_blank">
-            <i class="fab fa-instagram fa-2x"></i></a></div>
-      </div>
-   </div>
-
- </section>
-
-  <footer class="bg-dark">
-    <div class="text-center text-small">
-      <p>Copyright &copy; 2019, <a href="http://www.jurajsucik.com">jurajsucik.com</a></p>
-      <p>Designed by <a href="http://www.marketastankova.com">marketastankova.com</a></p>
+  <!--*****************Footer******************-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>Copyright &copy; 2020, <a href="http://www.jurajsucik.com">jurajsucik.com</a></p>
+      <p>design and code by <a href="http://www.marketastankova.com">mstanka</a></p>
     </div>
   </footer>
 
