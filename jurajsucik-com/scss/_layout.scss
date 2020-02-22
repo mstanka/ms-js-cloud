@@ -1,16 +1,18 @@
-header {
-  background: $dark-color;
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {  
   max-width: 1440px; 
   margin: 0 auto;
+  background: $dark-color;
   border-bottom: 3px solid $secondary-color;  
 }
 
 .header__container {   
   height: 6rem;
-  max-width: 1024px;
-  margin: 0 auto;    
   padding: 2rem 0; 
-
 
   ul {
     display: flex;
@@ -35,24 +37,29 @@ header {
   }  
 }
 
-.section__intro {
-  padding: 8rem 0;
-  //height: 60vh;
-  max-width: 1440px;
+.main {
+  max-width: 1440px; 
+  margin: 0 auto;
+  color: $neutral-color;
+  background-color: $ligth-color;
+}
+
+.about__container {
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  .intro__ilustration {
+  .about__ilustration {
     margin: 1.5rem 0; 
+    flex: 1;
   }
-  .intro__text {
-    padding: 2rem;  
-    max-width: 450px;     
+  .about__text {
+    max-width: 550px;     
 
-    .intro__text-bold {
+    .about__text-bold {
       font-weight: 700;
     }
 
@@ -75,31 +82,31 @@ header {
 
     p {
       line-height: 1.6rem;
-      padding-top: 2rem;
+      padding: 2rem 0;
     }
   }
 
   @include media-lg {
     flex-direction: row-reverse;
-    padding: 3rem;
+    padding: 6rem;
   }
 }
 
-.section__badges-container {
+.badges {
   background-color: $secondary-color;
-  max-width: 1440px;
-  margin: 0 auto;
-
-  .section__badges {
+ 
+  .badges__container {
     padding: 10rem 2rem;
     text-align: center;
 
     .badges__text {
-      padding: 2rem;
+      margin: 0 auto;
+      padding: 2rem 0;
       color: $ligth-color;
-
+      max-width: 600px; 
+      
       @include media-md {
-        padding: 2rem 10rem 4rem 10rem;
+        padding: 2rem 0 4rem 0rem;
       }
 
       p {
@@ -134,43 +141,53 @@ header {
   }
 }
 
-.section__contact {
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 10rem 2rem;
- 
-  h3 {    
-    text-align: center;
-  }
-  .contact__info {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+.contact__container {
+  padding: 10rem 0 3rem 0;
 
-    .contact-item {
-      padding: 0 .8rem;
+  .contact__container-contacts {
+    margin: 0 auto;
+  
+    h3 {    
+      text-align: center;
+    }
+    .contact__info {    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
 
-      a:hover {
-        color: $secondary-color;
+      .contact__info-item {
+        padding: 0 .8rem;
+
+        a:hover {
+          color: $secondary-color;
+        }
       }
     }
+  } 
+
+  .contact__container-twitter {
+    padding: 5rem 0;
+    text-align: center;
   }
 }
 
-footer {
+.footer {
   max-width: 1440px; 
   margin: 0 auto;  
   background-color: $dark-color;
   border-top: 3px solid $secondary-color;
   color: $ligth-color;
-  text-align: center;
-  font-size: 11px;
-  padding: 3rem 0;
-  line-height: 1.4rem; 
 
-  a {
-    color: $ligth-color;
-  }
+  .footer__container {
+    text-align: center;
+    font-size: 11px;
+    padding: 3rem 0;
+    line-height: 1.4rem; 
+
+    a {
+        color: $ligth-color;
+    }
+  }  
 }
     

@@ -9,7 +9,6 @@ body {
   background: $primary-dark-color;
 }
 
-
 h3 {
   font-size: 1.9rem;
   color: $dark-color;
@@ -26,21 +25,14 @@ li {
   list-style-type: none;
 }
 
-.container {  
-  max-width: 1440px;
-  margin: 0 auto;
-  color: $neutral-color;
-  background-color: $ligth-color;
-}
-
 img {
   max-width: 310px;
 
   @include media-md {
-    max-width: 500px;
+    max-width: 400px;
   }
 
   @include media-lg {
-    max-width: 550px;
+    max-width: 450px;
   }
 }
