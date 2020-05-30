@@ -42,7 +42,7 @@ li {
 }
 
 img {
-  width: 100%;
+  width: 90%;
 }
 
 .container {
@@ -127,7 +127,7 @@ img {
 
 .about__container {
   padding: 5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +194,8 @@ img {
 }
 
 .badges {
-  background-color: #f25f4c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f25f4c), to(#ff8676));
+  background: linear-gradient(to bottom, #f25f4c, #ff8676);
 }
 
 .badges__container {
@@ -244,16 +245,21 @@ img {
   }
 }
 
-.badges__list img {
+.badges__item {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
   -webkit-box-shadow: 1px 1px 3px;
           box-shadow: 1px 1px 3px;
 }
 
-.badges__list img:hover {
+.badges__item:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.badges__item img {
+  width: 80%;
+  padding: 3rem;
 }
 
 .blog__container {
@@ -305,7 +311,8 @@ img {
 .twitter__container {
   padding: 10rem 4rem;
   text-align: center;
-  background-color: #90b4ce;
+  background: -webkit-gradient(linear, left top, left bottom, from(#90b4ce), to(#c0dff5));
+  background: linear-gradient(to bottom, #90b4ce, #c0dff5);
 }
 
 .contact__container {

@@ -67,7 +67,7 @@
 .about {
   &__container {
     padding: 5rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,7 +116,7 @@
 
 //// BADGES /////
 .badges {
-  background-color: $secondary-color;
+  background: linear-gradient(to bottom, $secondary-color, $secondary-light-color);
 
   &__container {
     padding: 10rem 2rem;
@@ -153,14 +153,19 @@
     @include media-lg {
       grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  &__item {
+    transition: 0.4s ease-in;
+    box-shadow: 1px 1px 3px;
+
+    &:hover {
+      transform: scale(1.01);
+    }
 
     img {
-      transition: 0.4s ease-in;
-      box-shadow: 1px 1px 3px;
-
-      &:hover {
-        transform: scale(1.01);
-      }
+      width: 80%;
+      padding: 3rem;
     }
   }
 }
@@ -218,7 +223,7 @@
   &__container {
     padding: 10rem 4rem;
     text-align: center;
-    background-color: $primary-dark-color;
+    background: linear-gradient(to bottom, $primary-dark-color, $primary-light-color);
   }
 }
 
