@@ -53,6 +53,10 @@ img {
 .header {
   background: #2f2e41;
   border-bottom: 3px solid #f25f4c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .nav {
@@ -162,6 +166,7 @@ img {
   letter-spacing: 0.05em;
   line-height: 1;
   text-transform: uppercase;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -235,6 +240,45 @@ img {
 .badges__list img:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.blog__container {
+  padding: 10rem 4rem;
+}
+
+.blog__container > p {
+  padding: 1.5rem 0;
+}
+
+.blog__title {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color: #2f2e41;
+}
+
+.blog__date {
+  font-size: 1.3rem;
+}
+
+.blog__list {
+  padding: 0 3rem;
+}
+
+.blog__list li {
+  list-style-type: square;
+}
+
+.blog__button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  background-color: #f25f4c;
+  color: #fffffe;
+  -webkit-box-shadow: 1px 1px 2px #5f6c7b;
+          box-shadow: 1px 1px 2px #5f6c7b;
+  border: 1px solid #f25f4c;
+  margin-top: 3rem;
+  cursor: pointer;
 }
 
 .contact__container {
