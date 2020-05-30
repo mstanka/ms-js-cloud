@@ -8,6 +8,9 @@
 .header {
   background: $dark-color;
   border-bottom: 3px solid $secondary-color;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .nav {
@@ -88,6 +91,7 @@
     letter-spacing: 0.05em;
     line-height: 1;
     text-transform: uppercase;
+    padding-bottom: 2rem;
 
     @include media-md {
       font-size: 3rem;
@@ -147,6 +151,47 @@
         transform: scale(1.01);
       }
     }
+  }
+}
+
+//// BLOG /////
+
+.blog {
+  &__container {
+    padding: 10rem 4rem;
+
+    & > p {
+      padding: 1.5rem 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: $dark-color;
+  }
+
+  &__date {
+    font-size: 1.3rem;
+  }
+
+  &__list {
+    padding: 0 3rem;
+
+    li {
+      list-style-type: square;
+    }
+  }
+  &__button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    color: $ligth-color;
+    box-shadow: 1px 1px 2px $neutral-color;
+    border: 1px solid $secondary-color;
+    margin-top: 3rem;
+    cursor: pointer;
   }
 }
 
