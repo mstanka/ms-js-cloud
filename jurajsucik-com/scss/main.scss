@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
 
-@import 'variables',
-        'mixins',
-        'general', 
-        'layout';
+
+@import "abstracts/mixins",
+        "abstracts/variables", 
+
+        "base/base",
+        "base/typography", 
+        "base/utilities", 
+
+        "layout/layout";
