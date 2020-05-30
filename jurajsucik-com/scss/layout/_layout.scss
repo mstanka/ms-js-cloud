@@ -67,6 +67,7 @@
 .about {
   &__container {
     padding: 5rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -211,15 +212,20 @@
   }
 }
 
+//// TWITTER /////
+
+.twitter {
+  &__container {
+    padding: 10rem 4rem;
+    text-align: center;
+    background-color: $primary-dark-color;
+  }
+}
+
 //// CONTACT /////
 .contact {
   &__container {
-    padding: 5rem 0;
-  }
-
-  &__twitter {
-    padding: 5rem 0;
-    text-align: center;
+    padding: 3rem 0;
   }
 
   &__contacts {
@@ -229,6 +235,7 @@
 
   &__title {
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__info {
