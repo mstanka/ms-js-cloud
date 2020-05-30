@@ -57,6 +57,7 @@ img {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .nav {
@@ -88,8 +89,20 @@ img {
 .nav__link {
   color: #fffffe;
   padding: 1rem;
-  margin: 0 0.7rem;
+  margin: 0 0.3rem;
+  font-size: 1.4rem;
   border-radius: 5px;
+  background-color: #2f2e41;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__link {
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    margin: 0 0.7rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -277,8 +290,15 @@ img {
   -webkit-box-shadow: 1px 1px 2px #5f6c7b;
           box-shadow: 1px 1px 2px #5f6c7b;
   border: 1px solid #f25f4c;
+  border-radius: 5px;
   margin-top: 3rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+.blog__button:hover {
+  background-color: #2f2e41;
 }
 
 .contact__container {

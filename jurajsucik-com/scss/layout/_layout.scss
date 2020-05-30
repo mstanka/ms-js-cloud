@@ -11,6 +11,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .nav {
@@ -29,8 +30,17 @@
   &__link {
     color: $ligth-color;
     padding: 1rem;
-    margin: 0 0.7rem;
+    margin: 0 0.3rem;
+    font-size: 1.4rem;
     border-radius: 5px;
+    background-color: $dark-color;
+    transition: background-color 0.5s ease-in;
+
+    @include media-lg {
+      padding: 1rem 1.5rem;
+      font-size: 1.7rem;
+      margin: 0 0.7rem;
+    }
 
     @include media-lg {
       font-size: 2rem;
@@ -190,8 +200,14 @@
     color: $ligth-color;
     box-shadow: 1px 1px 2px $neutral-color;
     border: 1px solid $secondary-color;
+    border-radius: 5px;
     margin-top: 3rem;
     cursor: pointer;
+    transition: background-color 0.5s ease-in;
+
+    &:hover {
+      background-color: $dark-color;
+    }
   }
 }
 
