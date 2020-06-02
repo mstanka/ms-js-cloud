@@ -1,0 +1,282 @@
+.container {
+  margin: 0 auto;
+}
+
+///// HEADER //////
+
+.header {
+  background: $dark-color;
+  border-bottom: 3px solid $secondary-color;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    color: $ligth-color;
+    padding: 1rem;
+    margin: 0 0.3rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    background-color: $dark-color;
+    transition: background-color 0.5s ease-in;
+
+    @include media-lg {
+      padding: 1rem 1.5rem;
+      font-size: 1.7rem;
+      margin: 0 0.7rem;
+    }
+
+    @include media-lg {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+//// MAIN ///////
+
+.main {
+  color: $neutral-color;
+  background-color: $ligth-color;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+//// ABOUT //////
+
+.about {
+  &__container {
+    padding: 5rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include media-lg {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__ilustration {
+    flex: 0 0 50%;
+  }
+
+  &__name {
+    font-size: 2.8rem;
+    color: $dark-color;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+
+    @include media-md {
+      font-size: 4rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $secondary-color;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+    @include media-md {
+      font-size: 3rem;
+    }
+  }
+
+  &__text-bold {
+    font-weight: 700;
+  }
+}
+
+//// BADGES /////
+.badges {
+  background: $secondary-color;
+
+  &__container {
+    padding: 10rem 2rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    color: $dark-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    color: $ligth-color;
+    max-width: 60rem;
+
+    @include media-md {
+      padding: 2rem 0 4rem 0rem;
+    }
+  }
+
+  &__list {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: min-max(1fr, 10rem);
+    gap: 4rem;
+
+    @include media-md {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    transition: 0.4s ease-in;
+    box-shadow: 1px 1px 3px;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    img {
+      width: 80%;
+      padding: 3rem;
+    }
+  }
+}
+
+//// BLOG /////
+
+.blog {
+  &__container {
+    padding: 10rem 4rem;
+
+    & > p {
+      padding: 1.5rem 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: $dark-color;
+  }
+
+  &__date {
+    font-size: 1.3rem;
+  }
+
+  &__list {
+    padding: 0 3rem;
+
+    li {
+      list-style-type: square;
+    }
+  }
+  &__button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    color: $ligth-color;
+    box-shadow: 1px 1px 2px $neutral-color;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in;
+
+    &:hover {
+      background-color: $dark-color;
+    }
+  }
+}
+
+//// TWITTER /////
+
+.twitter {
+  &__container {
+    padding: 10rem 4rem;
+    text-align: center;
+    background: linear-gradient(to bottom, $primary-dark-color, $primary-light-color);
+  }
+}
+
+//// CONTACT /////
+.contact {
+  &__container {
+    padding: 3rem 0;
+  }
+
+  &__contacts {
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    &-item {
+      padding: 0 0.8rem;
+    }
+  }
+
+  &__link {
+    color: $secondary-color;
+
+    &:hover {
+      color: $dark-color;
+    }
+  }
+}
+
+//// FOOTER /////
+.footer {
+  max-width: $body-width;
+  margin: 0 auto;
+  background-color: $dark-color;
+  border-top: 3px solid $secondary-color;
+  color: $ligth-color;
+
+  &__container {
+    text-align: center;
+    font-size: 11px;
+    padding: 3rem 0;
+  }
+
+  &__link {
+    color: $ligth-color;
+  }
+}
