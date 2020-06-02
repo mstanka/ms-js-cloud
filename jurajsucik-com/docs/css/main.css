@@ -46,7 +46,6 @@ img {
 }
 
 .container {
-  max-width: 102.4rem;
   margin: 0 auto;
 }
 
@@ -194,8 +193,7 @@ img {
 }
 
 .badges {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f25f4c), to(#ff8676));
-  background: linear-gradient(to bottom, #f25f4c, #ff8676);
+  background: #f25f4c;
 }
 
 .badges__container {

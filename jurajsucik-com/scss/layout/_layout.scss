@@ -1,5 +1,4 @@
 .container {
-  max-width: $container-width;
   margin: 0 auto;
 }
 
@@ -116,7 +115,7 @@
 
 //// BADGES /////
 .badges {
-  background: linear-gradient(to bottom, $secondary-color, $secondary-light-color);
+  background: $secondary-color;
 
   &__container {
     padding: 10rem 2rem;
